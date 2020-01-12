@@ -67,8 +67,8 @@
 
       // One thing I noticed Wes do is when writing new functions, start off with console.logs to make sure you're on the right path.
       function handleUpdate() {
-        const suffix = this.dataset.sizing || '';
         // dataset is an object that contains all the data attributes (data-*)
+        const suffix = this.dataset.sizing || '';
         document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix)
       }
 
